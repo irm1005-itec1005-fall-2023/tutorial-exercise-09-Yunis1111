@@ -126,9 +126,9 @@ let starWarsShips = ["Luke Skywalker", "Star Destroyer", "Millennium Falcon", "C
 //  Star Destroyer
 //  Millennium Falcon
 //  CR90 corvette
-
-
-
+ for (const element of starWarsShips) {
+     console.log(element);
+ }
 //
 // STEP D - Working with arrays and for loops
 //
@@ -156,7 +156,9 @@ const cities = ['New York', 'Paris', 'Tokyo', 'London', 'Sydney', 'Rio de Janeir
 //  etc until 9 - "Moscow"
 // Hint, you can print multiple variables to the console using the "," (comma) value as a seperator
 
-
+for (let i = 0; i < cities.length ; i++) {
+    console.log(i, cities[i]);
+}
 
 // Now, lets print the index value of "Paris"
 // Loop through the array using a for loop and manual controls, and check each cities[i] entry
@@ -165,7 +167,11 @@ const cities = ['New York', 'Paris', 'Tokyo', 'London', 'Sydney', 'Rio de Janeir
 // Expected output:
 //  Found Paris is at index: 1
 
-
+for (let i = 0; i < cities.length ; i++) {
+    if (cities[i] === "Paris") {
+        console.log("Found Paris is at index: ", i);
+    }
+}
 
 
 
