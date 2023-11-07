@@ -14,15 +14,17 @@
 // Let's create our first array
 // Create a variable called lotteryNumbers and assign it an array with some random numbers
 // There should be 6 numbers each one between 0-49 (just like lotto 649)
-
+let lotteryNumbers = [1, 2, 3, 4, 5, 6];
 
 // Now let's console log the array so you can see the initial values
-
+console.log(lotteryNumbers);
 
 // Arrays have a property called length that lets us know how many items are in the array
 // Use the .length property (arrayVariableName.length) to console log how many numbers are in
 // our array (there should be 6 - since it's 649)
+lotteryNumbers.length;
 
+console.log(lotteryNumbers.length);
 
 
 //
@@ -37,7 +39,7 @@
 // Create a new variable called myColoursArray and add the following colours inside it:
 // "purple", "blue", "hotpink", "green", "yellow"
 
-
+let myColoursArray = ["purple", "blue", "hotpink", "green", "yellow"];
 // Now we're going to learn to use a method.
 // Arrays have built in methods that help us work with arrays.
 // To add an item to our array we can use the "push()" method
@@ -46,16 +48,16 @@
 
 // Use the push("orange") where X is a number between 0-49 and add it to your array
 
-
+myColoursArray.push("orange");
 // Console log your myColoursArray and make sure that "orange" has now been added to the end of the array
-
+console.log (myColoursArray);   
 
 // Use the reverse() method to reverse the items in the array (first goes last, last goes first, etc)
 // The reverse method does not take any parameters so you can use it with just empty brackets ()
-
+myColoursArray.reverse();
 
 // Console log the array so we can confirm the elements have been reversed
-
+console.log(myColoursArray);   
 
 
 //
@@ -67,29 +69,29 @@ let starWarsShips = ["Luke Skywalker", "Star Destroyer", "Millennium Falcon", "C
 
 // Use array[index] to console log just the first item in the array (Luke Skywalker)
 // Expected output: "Luke Skywalker"
-
+console.log(starWarsShips[1]);
 
 // Use array[array.length-1] to console log just the last item in the array ("CR90 corvette")
 
+let lastIndex = starWarsShips.length -1;
 
+console.log(starWarsShips[lastIndex]);
 // Reassign (change) the first value in the array so that it now has "TIE Advanced x1" instead of "Luke Skywalker"
-
-
+starWarsShips[0] = "TIE Advanced x1";
+console.log(starWarsShips[0]);
 // Output the array
 // Expected output:
 // "TIE Advanced x1", "Star Destroyer", "Millennium Falcon", "CR90 corvette"
 console.log(starWarsShips);
 
 // Use the array.pop() method to remove the last element in the starWarsShips array ("CR90 corvette")
-
-
+starWarsShips.pop();
 // Output the array - expected result:
 // "TIE Advanced x1", "Star Destroyer", "Millennium Falcon"
 console.log(starWarsShips);
-
 // Output the length of the array
 // Expected ouput: 3
-
+ console.log(starWarsShips.length);
 
 
 
@@ -109,3 +111,13 @@ const newFruits = fruits.slice(); // Fill in the correct parameter
 console.log(newFruits);
 
 // CONGRATULATIONS - THIS CONCLUDES STEP 02
+// Us
+
+
+const newerFruits = ['apple', 'banana', 'orange', 'kiwi', 'mango'];
+
+// Use splice to remove "orange"
+
+newerFruits.splice(2,1)
+
+console.log(newerFruits)
