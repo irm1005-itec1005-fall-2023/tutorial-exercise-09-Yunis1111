@@ -11,6 +11,9 @@
 // STEP A - Create a simple if statements
 //
 
+if (true) {
+  console.log("This is true");
+}
 // A const variable that is a string set to "Paris"
 const vacationDestination = "Paris";
 
@@ -19,7 +22,13 @@ const vacationDestination = "Paris";
 // Docs: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
 // Expected output: "Woohoo, excellent choice"
 
+if (vacationDestination === "Paris") {
+  console.log("Woohoo, excellent choice");
+}
 
+else {
+    console.log("Awww, but that's still cool");
+}
 
 
 
@@ -31,7 +40,7 @@ const vacationDestination = "Paris";
 //
 
 // Create a const variable called studentGradeValue and assign it to the number 55
-
+const studentGradeValue = 55;
 
 // Create a let variable called studentGradeLetter and assign it to null
 // (since we don't know what it is just yet - we're going to calculate it next
@@ -47,6 +56,32 @@ let studentGradeLetter = null;
 //  ELSE studentGradeLetter = "F"
 //
 
+if (studentGradeValue >= 90) {
+    studentGradeLetter = "A+";
+}
+
+else if (studentGradeValue >= 80) {
+    studentGradeLetter = "A";
+}
+
+else if (studentGradeValue >= 70) {
+
+    studentGradeLetter = "B";
+}
+
+else if (studentGradeValue >= 60) {
+
+    studentGradeLetter = "C";
+}
+
+else if (studentGradeValue >= 50) {
+
+    studentGradeLetter = "D";
+}
+
+else if (studentGradeValue >= 40) {
+    studentGradeLetter = "F";
+}
 
 
 
