@@ -108,7 +108,7 @@ const fruits = ['apple', 'banana', 'orange', 'kiwi', 'mango'];
 const newFruits = fruits.slice(); // Fill in the correct parameter
 
 // Output the newFruits array which should only have 'kiwi', 'mango' in it
-console.log(newFruits);
+console.log(fruits.slice(3,5));
 
 // CONGRATULATIONS - THIS CONCLUDES STEP 02
 // Us
